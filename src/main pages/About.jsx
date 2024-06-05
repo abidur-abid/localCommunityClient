@@ -5,7 +5,7 @@ import TeamMembers from '../components/TeamMembers';
 
 const About = () => {
     return (
-        <section>
+        <section className='sm:mx-auto'>
             <SectionTitle title={"About Us"}></SectionTitle>
             <TeamBanner></TeamBanner>
             <SectionTitle title={"Our Team"}></SectionTitle>

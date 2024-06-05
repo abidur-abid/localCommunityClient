@@ -54,7 +54,7 @@ const Example = () => {
     <SectionTitle title={"News Overview"}></SectionTitle>
     <ResponsiveContainer width="100%" height="60%">
       <LineChart width={300} height={100} data={data}>
-        <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
+        <Line type="monotone" dataKey="uv" stroke="#8884d8" strokeWidth={2} />
       </LineChart>
     </ResponsiveContainer>
     </>
