@@ -42,7 +42,7 @@ export const router = createBrowserRouter([
           path: "/news/:id",
           element: <PrivateRoute><SingleNews></SingleNews></PrivateRoute>,
           loader: ({ params }) =>
-            fetch(`http://localhost:5000/news/${params.id}`),
+            fetch(`https://localcommunityserver.onrender.com/news/${params.id}`),
 
         },
         {
@@ -71,7 +71,7 @@ export const router = createBrowserRouter([
           path: "/dashboard/profile/:id",
           element: <UpdateProfile></UpdateProfile>,
           loader: ({ params }) =>
-            fetch(`http://localhost:5000/users/${params.id}`),
+            fetch(`https://localcommunityserver.onrender.com/users/${params.id}`),
         },
         {
           path: "/dashboard/overview",
@@ -85,7 +85,7 @@ export const router = createBrowserRouter([
           path: "/dashboard/allnews/:id",
           element: <UpdateNews></UpdateNews>,
           loader: ({ params }) =>
-            fetch(`http://localhost:5000/news/${params.id}`),
+            fetch(`https://localcommunityserver.onrender.com/news/${params.id}`),
         },
         {
           path: "/dashboard/addnews",

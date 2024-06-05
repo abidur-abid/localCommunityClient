@@ -20,7 +20,7 @@ const UpdateNews = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await fetch(`http://localhost:5000/news/${news?._id}`, {
+      const res = await fetch(`https://localcommunityserver.onrender.com/news/${news?._id}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json",

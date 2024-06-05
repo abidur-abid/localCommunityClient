@@ -21,7 +21,7 @@ const AddNews = () => {
     }
     console.log(location, topicName , date, description);
     try {
-      const res = await fetch('http://localhost:5000/news', {
+      const res = await fetch('https://localcommunityserver.onrender.com/news', {
         method: "POST",
         headers: {
           "Content-type": "application/json",

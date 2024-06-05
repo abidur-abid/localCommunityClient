@@ -11,7 +11,7 @@ const News = () => {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const res = await fetch(`http://localhost:5000/news`);
+                const res = await fetch(`https://localcommunityserver.onrender.com/news`);
 
                 if (!res.ok) {
                     throw new Error("Failed to fetch News");

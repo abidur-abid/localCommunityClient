@@ -14,7 +14,7 @@ const AllNews = () => {
 
   const fetchNews = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/news`);
+      const res = await fetch(`https://localcommunityserver.onrender.com/news`);
       
 
       if (!res.ok) {
@@ -38,7 +38,7 @@ const AllNews = () => {
     const token = localStorage.getItem("token");
 
     if (confirmed) {
-      const res = await fetch(`http://localhost:5000/news/${id}`, {
+      const res = await fetch(`https://localcommunityserver.onrender.com/news/${id}`, {
         method: "DELETE",
         headers: {
           "Content-type": "application/json",

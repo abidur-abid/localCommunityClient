@@ -11,7 +11,7 @@ const GoogleLogin = () => {
             const googleUser = await googleSignIn();
             toast.success("Successfully Login");
             console.log(googleUser.user);
-            const res = await fetch('http://localhost:5000/users', {
+            const res = await fetch('https://localcommunityserver.onrender.com/users', {
           method: "POST",
           headers: {
             "Content-type": "application/json",

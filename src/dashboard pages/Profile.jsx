@@ -32,7 +32,7 @@ const Profile = () => {
 
     //     const fetchUser = async () => {
     //         try {
-    //             const res = await fetch(`http://localhost:5000/users/${email}`);
+    //             const res = await fetch(`https://localcommunityserver.onrender.com/users/${email}`);
 
     //             if (!res.ok) {
     //                 throw new Error("Failed to fetch user data");

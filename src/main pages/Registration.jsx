@@ -47,7 +47,7 @@ const Registration = () => {
             await updateUserProfile(name, photo);
 
             // Save the user information to the database
-            const res = await fetch('http://localhost:5000/users', {
+            const res = await fetch('https://localcommunityserver.onrender.com/users', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
